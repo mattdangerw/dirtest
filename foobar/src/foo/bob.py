@@ -1,2 +1,0 @@
-class Bob:
-    something = "hii"

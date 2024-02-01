@@ -1,2 +1,0 @@
-class Layer:
-    something = "hii"
