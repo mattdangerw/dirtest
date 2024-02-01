@@ -1,0 +1,2 @@
+class Alice:
+    something = "hii"

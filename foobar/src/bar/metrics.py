@@ -1,0 +1,2 @@
+class Metric:
+    something = "hii"
