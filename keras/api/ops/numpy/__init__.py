@@ -45,6 +45,7 @@ from keras.src.ops.numpy import diagonal
 from keras.src.ops.numpy import diff
 from keras.src.ops.numpy import digitize
 from keras.src.ops.numpy import divide
+from keras.src.ops.numpy import divide_no_nan
 from keras.src.ops.numpy import dot
 from keras.src.ops.numpy import einsum
 from keras.src.ops.numpy import empty

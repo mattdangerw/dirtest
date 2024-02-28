@@ -7,4 +7,4 @@ from keras.api import *
 __path__.append(os.path.join(os.path.dirname(__file__), "api"))
 
 # Define a version string.
-__version__ = "3.0.4"
+__version__ = "3.0.5"

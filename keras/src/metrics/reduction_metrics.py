@@ -1,4 +1,3 @@
-from keras.src import backend
 from keras.src import initializers
 from keras.src import losses
 from keras.src import ops
@@ -17,7 +16,7 @@ def reduce_to_samplewise_values(values, sample_weight, reduce_fn, dtype):
                 sample_weight, mask, dtype=dtype, reduction="sum"
             )
         # Update dimensions of weights to match with values if possible.
-        values, sample_weight = losses.loss.squeeze_to_same_rank(
+        values, sample_weight = losses.loss.squeeze_or_expand_to_same_rank(
             values, sample_weight
         )
         # Reduce values to same ndim as weight array
@@ -150,10 +149,8 @@ class Mean(Metric):
         self.count.assign(0)
 
     def result(self):
-        return self.total / (
-            ops.maximum(
-                ops.cast(self.count, dtype=self.dtype), backend.epsilon()
-            )
+        return ops.divide_no_nan(
+            self.total, ops.cast(self.count, dtype=self.dtype)
         )
 
 

@@ -22,7 +22,7 @@ def set_random_seed(seed):
     ```python
     import random
     import numpy as np
-    from keras.api.utils.module_utils import tensorflow as tf
+    from keras.utils.module_utils import tensorflow as tf
     random.seed(seed)
     np.random.seed(seed)
     tf.random.set_seed(seed)

@@ -134,7 +134,7 @@ class RNN(Layer):
     Examples:
 
     ```python
-    from keras.api.layers import RNN
+    from keras.layers import RNN
     from keras import ops
 
     # First, let's define a RNN Cell, as a layer subclass.

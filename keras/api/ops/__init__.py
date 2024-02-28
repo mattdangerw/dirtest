@@ -6,6 +6,7 @@ since your modifications would be overwritten.
 
 
 from keras.api.ops import image
+from keras.api.ops import linalg
 from keras.api.ops import nn
 from keras.api.ops import numpy
 from keras.src.ops.core import cast
@@ -23,6 +24,16 @@ from keras.src.ops.core import stop_gradient
 from keras.src.ops.core import unstack
 from keras.src.ops.core import vectorized_map
 from keras.src.ops.core import while_loop
+from keras.src.ops.linalg import cholesky
+from keras.src.ops.linalg import det
+from keras.src.ops.linalg import eig
+from keras.src.ops.linalg import inv
+from keras.src.ops.linalg import lu_factor
+from keras.src.ops.linalg import norm
+from keras.src.ops.linalg import qr
+from keras.src.ops.linalg import solve
+from keras.src.ops.linalg import solve_triangular
+from keras.src.ops.linalg import svd
 from keras.src.ops.math import erf
 from keras.src.ops.math import erfinv
 from keras.src.ops.math import extract_sequences
@@ -32,13 +43,10 @@ from keras.src.ops.math import in_top_k
 from keras.src.ops.math import irfft
 from keras.src.ops.math import istft
 from keras.src.ops.math import logsumexp
-from keras.src.ops.math import norm
-from keras.src.ops.math import qr
 from keras.src.ops.math import rfft
 from keras.src.ops.math import rsqrt
 from keras.src.ops.math import segment_max
 from keras.src.ops.math import segment_sum
-from keras.src.ops.math import solve
 from keras.src.ops.math import stft
 from keras.src.ops.math import top_k
 from keras.src.ops.nn import average_pool
@@ -60,6 +68,7 @@ from keras.src.ops.nn import log_softmax
 from keras.src.ops.nn import max_pool
 from keras.src.ops.nn import moments
 from keras.src.ops.nn import multi_hot
+from keras.src.ops.nn import normalize
 from keras.src.ops.nn import one_hot
 from keras.src.ops.nn import relu
 from keras.src.ops.nn import relu6
@@ -112,6 +121,7 @@ from keras.src.ops.numpy import diagonal
 from keras.src.ops.numpy import diff
 from keras.src.ops.numpy import digitize
 from keras.src.ops.numpy import divide
+from keras.src.ops.numpy import divide_no_nan
 from keras.src.ops.numpy import dot
 from keras.src.ops.numpy import einsum
 from keras.src.ops.numpy import empty

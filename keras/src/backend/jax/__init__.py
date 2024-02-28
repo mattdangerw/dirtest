@@ -1,6 +1,7 @@
 from keras.src.backend.jax import core
 from keras.src.backend.jax import distribution_lib
 from keras.src.backend.jax import image
+from keras.src.backend.jax import linalg
 from keras.src.backend.jax import math
 from keras.src.backend.jax import nn
 from keras.src.backend.jax import numpy
