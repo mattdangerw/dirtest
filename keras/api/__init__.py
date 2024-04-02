@@ -49,3 +49,4 @@ from keras.src.ops.operation import Operation
 from keras.src.optimizers.optimizer import Optimizer
 from keras.src.regularizers.regularizers import Regularizer
 from keras.src.version import version
+from keras.src.version import __version__
