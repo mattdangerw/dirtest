@@ -18,7 +18,7 @@ def __dir__():
     return list(keys)
 
 
-# Never autocomplete `.src` or `.api` during an import statement.
+# Don't import `.src` or `.api` during `from keras import *`.
 __all__ = [
     name
     for name in globals().keys()
