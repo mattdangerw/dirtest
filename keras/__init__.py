@@ -1,6 +1,6 @@
 # Import everything from /api/ into keras.
 from keras.api import *
-from keras.api import __version__
+from keras.api import __version__  # Import * ignores names start with "_".
 
 import os
 
